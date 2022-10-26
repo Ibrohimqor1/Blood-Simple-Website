@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "bion-bold";
+  src: url("../fonts/bion-bold.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "bion-boldcond";
+  src: url("../fonts/bion-boldcond.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "bion-book";
+  src: url("../fonts/bion-book.otf");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "bion-bookcond";
+  src: url("../fonts/bion-bookcond.otf");
+  font-style: normal;
+  font-weight: normal;
+}

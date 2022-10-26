@@ -1,0 +1,238 @@
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* animated logo  */
+
+.animated-block {
+    margin: 120px 0 100px 0;
+}
+
+.logo-anim {
+    position: relative;
+}
+
+.logo-anim_main {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    padding: 20px 0 0 0;
+    position: relative;
+    z-index: -1;
+    opacity: 1;
+}
+
+.logo-anim_left {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    left: -80px;
+    top: 80px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: linear-gradient(217.2deg, rgba(255, 44, 44, 0.51) 5.01%, #700505 103.93%);
+    opacity: 0.6;
+    animation: 12s linear infinite left;
+    transform-origin: right top;
+}
+
+.logo-anim_right {
+    content: '';
+    position: absolute;
+    z-index: -2;
+    right: -80px;
+    top: 80px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0.6;
+    background: linear-gradient(217.2deg, #ff2727 5.01%, #8d1e1e 103.93%);
+    animation: 7s linear infinite right;
+    transform-origin: left top;
+}
+
+.n2-left {
+    right: -80px;
+    bottom: 80px;
+    animation: 6.7s linear infinite left;
+    background: linear-gradient(217.2deg, #c71a1a 5.01%, #cc5050 103.93%);
+}
+
+.n2-right {
+    right: -60px;
+    top: 60px;
+    animation: 18s linear infinite right;
+    background: linear-gradient(217.2deg, #a11515 5.01%, #e0110a 103.93%);
+}
+
+.cards-parent {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.card-donate,
+.card-receive {
+    height: 300px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid #a11515;
+    border-radius: 20px;
+    background-color: #ebebeb;
+}
+
+.sidebars-icon {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    z-index: 150;
+}
+
+@media (max-width: 520px) {
+
+    .cards-parent {
+        flex-direction: column;
+    }
+}
+
+@keyframes left {
+    0% {
+        transform: rotate(300deg)
+    }
+
+    100% {
+        transform: rotate(-60deg);
+    }
+}
+
+
+@keyframes right {
+    0% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(540deg)
+    }
+}
+
+@media (max-width: 400px) {
+
+    .logo-anim_right,
+    .logo-anim_left,
+    .logo-anim_main {
+        width: 130px;
+        height: 130px;
+    }
+}
+
+
+/* animated logo end */
+
+.btn-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.btn {
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    color: #000;
+    transition: 300ms;
+}
+
+.btn::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ff7878;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    opacity: 0.8;
+}
+
+.btn::before {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #b7b7b7;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    opacity: 0.8;
+}
+
+.content-block {
+    text-align: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.small-text {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+body {
+    margin: 0px;
+}
+
+#container {
+    /* Center the text in the viewport. */
+    display: flex;
+    justify-content: center;
+
+    /* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+    filter: url(#threshold) blur(0.6px);
+}
+
+/* Your average text styling */
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+
+    font-family: 'Raleway', sans-serif;
+    font-size: 67px;
+
+    text-align: center;
+
+    user-select: none;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
+    <title>Blood Bank</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__wrap">
+                <div class="hamb">
+                    <div class="hamb__field" id="hamb">
+                        <span class="bar"></span> <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <a href="../index.html" class="logo" id="logo"><img src="../img/logo.svg" alt="Logo" /></a>
+                <ul class="menu" id="menu">
+                    <li><a href="https://reprobank.ru/">Другие проекты</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="popup" id="popup"></div>
+    <main>
+        <div class="login_block">
+            <p>Введите Логин</p>
+            <input type="text" placeholder="Логин" maxlength="12" class="login" id="login">
+            <div class="login_btn" style="font-size: 23px;" id="login-btn">Войти</div>
+            <p class="login_text">Ещё не зарегестрировались?</p>
+            <a href="registration.html" class="login_btn">Зарегестрируйтесь</a>
+        </div>
+    </main>
+    <script src="../js/nav-bar.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

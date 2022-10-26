@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="shortcut icon" href="../img/logo.svg" type="image/x-icon">
+    <title>Blood Bank</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar__wrap">
+                <div class="hamb">
+                    <div class="hamb__field" id="hamb">
+                        <span class="bar"></span> <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </div>
+                <a href="../index.html" class="logo" id="logo"><img src="../img/logo.svg" alt="Logo" /></a>
+                <ul class="menu" id="menu">
+                    <li><a href="https://reprobank.ru/">Другие проекты</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="popup" id="popup"></div>
+    <main>
+        <div class="registration_block">
+            <h1>Введите данные для регистрации</h1>
+            <input class="reg_input" id="name" type="text" placeholder="Имя Фамилия">
+            <input class="reg_input" id="age" type="number" placeholder="Возраст">
+            <input class="reg_input" id="blood" type="text" placeholder="Группа крови">
+            <div class="reg_btn" id="button">Зарегестрироваться</div>
+        </div>
+    </main>
+    <script src="../js/nav-bar.js"></script>
+    <script src="../js/registration.js"></script>
+</body>
+
+</html>

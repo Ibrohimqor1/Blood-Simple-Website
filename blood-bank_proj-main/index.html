@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon">
+  <title>Blood Bank</title>
+</head>
+
+<body>
+  <!-- navbar -->
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar__wrap">
+        <div class="hamb">
+          <div class="hamb__field" id="hamb">
+            <span class="bar"></span> <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+        <a class="logo" id="logo"><img src="img/logo.svg" alt="Logo" /></a>
+        <ul class="menu" id="menu">
+          <li><a href="https://reprobank.ru/">Другие проекты</a></li>
+          <li><a href="aboutUs.html">О нас</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="popup" id="popup"></div>
+
+  <!-- main content -->
+  <main>
+
+    <!-- animated logo   -->
+    <div class="animated-block">
+      <div class="logo-anim">
+        <div class="logo-anim_main">
+          <img src="img/logo.svg" alt="Logo" />
+        </div>
+        <div class="logo-anim_left"></div>
+        <div class="logo-anim_right"></div>
+        <div class="logo-anim_left n2-left"></div>
+        <div class="logo-anim_right n2-right"></div>
+      </div>
+    </div>
+
+    <!-- content-block -->
+    <div class="content-block">
+
+
+
+
+      <!-- Explanation in JS tab -->
+
+      <!-- The two texts -->
+      <div id="container">
+        <span id="text1"></span>
+        <span id="text2"></span>
+      </div>
+      <!-- magic text -->
+      <svg id="filters">
+        <defs>
+          <filter id="threshold">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="1 0 0 0 0
+									0 1 0 0 0
+									0 0 1 0 0
+									0 0 0 255 -140" />
+          </filter>
+        </defs>
+      </svg>
+      <p class="small-text">(СПИД в подарок)</p>
+    </div>
+
+    <!-- buttons -->
+    <div class="btn-block">
+      <a href='pages/login.html' class="btn donate">Войти В Аккаунт</a>
+    </div>
+  </main>
+
+  <!-- Подключение скриптов -->
+  <script src="js/nav-bar.js"></script>
+  <script src="js/magic-text.js"></script>
+</body>
+
+</html>

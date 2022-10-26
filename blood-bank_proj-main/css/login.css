@@ -1,0 +1,42 @@
+.login_block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 100px;
+    color: #fff;
+    font-size: 26px;
+    text-align: center;
+}
+
+.login_text {
+    margin-top: 50px;
+}
+
+.login {
+    width: 250px;
+    height: 50px;
+    border-radius: 20px;
+    font-size: 25px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-family: bion-bold;
+}
+
+.login:focus {
+    outline: none;
+}
+
+.login_btn {
+    width: 200px;
+    height: 40px;
+    border-radius: 17px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    cursor: pointer;
+    font-size: 16px;
+}
